@@ -5,16 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stopwatch</title>
+    <title>Anup's Stopwatch</title>
 </head>
 
+<style>
+body{
+font-family: cursive;
+}
+
+.title{
+font-size:54px;
+font-family:"Poppins";
+color:#ca8e3d;
+}
+	#demo{
+	background: #ccc;
+color:black;
+width: 550px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+border-radius:8px;
+  box-shadow: 0 8px 8px -4px lightblue;
+
+}
+
+button{
+font-size: 18px;
+    padding: 10px 30px;
+    background: radial-gradient(#e53935, #f06292);
+    color: white;
+    border: none;
+    border-radius: 6px;
+margin-top: 15px;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 58px;
+    background: #f4f4f4;
+    border-radius: 10px;
+background: #eee;
+  box-shadow: 0 8px 8px -4px lightblue;
+}
+</style>
 <body>
+<div class="main">
+<div class="main-wrapper">
+<div class="title">STOPWATCH</div>
+
     <div id="demo">00:00:00</div>
-    <div>
+    <div class="buttons">
         <button onclick="startTime()">Start</button>
         <button onClick="stopTime()">Stop</button>
         <button onClick="resetTime()">Reset</button>
     </div>
+</div>
+</div>
 </body>
 <script type="text/javascript" src="script.js"></script>
 
